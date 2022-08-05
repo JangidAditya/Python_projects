@@ -1,0 +1,29 @@
+#  The Rock, Paper,Scissor game code simple
+x =["ROCK","PAPER","SCISSOR"]
+comp_pick = random.choice(x)
+
+user_pick = input()
+
+if user_pick == comp_pick:
+    print('tie,you both select same')
+    print("Thank you")
+elif user_pick == 'ROCK' and comp_pick == 'PAPER':
+    print('you loose,computer select paper')
+    print("Thank you")
+elif user_pick  == 'ROCK' and comp_pick == "SCISSOR":
+    print('you win,computer select scissors')
+    print("Thank you")
+elif user_pick == 'PAPER' and comp_pick == 'SCISSOR':
+    print('you loose,computer select scissors')
+    print("Thank you")
+elif user_pick == 'PAPER' and comp_pick == 'ROCK':
+    print('you win,computer select rock')
+    print("Thank you")
+elif user_pick == 'SCISSOR' and comp_pick == 'ROCK':
+    print('you loose,computer select rock')
+    print("Thank you")
+elif user_pick == 'SCISSOR' and comp_pick == 'PAPER':
+    print('you win ,computer select paper')
+    print("Thank you")
+else:
+    print('invalid: CHOOSE ONE..... ROCK PAPER & SCISSOR')
